@@ -4,5 +4,5 @@ class User < ApplicationRecord
   validates :name, presence: true
   validates :birthday, presence: true
   has_many :transactions
-  has_may :points
+  has_many :points
 end

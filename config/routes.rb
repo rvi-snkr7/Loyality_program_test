@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :reward_users
   resources :transaction_users
   resources :transactions
   resources :users

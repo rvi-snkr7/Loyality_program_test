@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_23_035604) do
+ActiveRecord::Schema.define(version: 2022_10_23_062929) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "reward_users", force: :cascade do |t|
+    t.string "name"
+    t.bigint "user_id", null: false
+    t.bigint "transaction_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "reason"
+    t.index ["transaction_id"], name: "index_reward_users_on_transaction_id"
+    t.index ["user_id"], name: "index_reward_users_on_user_id"
+  end
 
   create_table "transaction_users", force: :cascade do |t|
     t.integer "point"
@@ -41,6 +52,8 @@ ActiveRecord::Schema.define(version: 2022_10_23_035604) do
     t.datetime "dob"
   end
 
+  add_foreign_key "reward_users", "transactions"
+  add_foreign_key "reward_users", "users"
   add_foreign_key "transaction_users", "transactions"
   add_foreign_key "transaction_users", "users"
   add_foreign_key "transactions", "users"

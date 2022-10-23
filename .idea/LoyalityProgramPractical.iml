@@ -95,6 +95,7 @@
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.6.0, rbenv: 2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="reverse_markdown (v2.1.1, rbenv: 2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.2.5, rbenv: 2.7.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rolify (v6.0.0, rbenv: 2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop (v1.37.0, rbenv: 2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.23.0, rbenv: 2.7.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.11.0, rbenv: 2.7.6) [gem]" level="application" />
@@ -134,6 +135,7 @@
     <option name="generators">
       <list>
         <option value="active_record:application_record" />
+        <option value="active_record:rolify" />
         <option value="application_record" />
         <option value="assets" />
         <option value="benchmark" />
@@ -150,6 +152,8 @@
         <option value="model" />
         <option value="rack_profiler:install" />
         <option value="resource" />
+        <option value="rolify" />
+        <option value="rolify:user" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="system_test" />
@@ -164,6 +168,7 @@
     <option name="myGenerators">
       <list>
         <option value="active_record:application_record" />
+        <option value="active_record:rolify" />
         <option value="application_record" />
         <option value="assets" />
         <option value="benchmark" />
@@ -180,6 +185,8 @@
         <option value="model" />
         <option value="rack_profiler:install" />
         <option value="resource" />
+        <option value="rolify" />
+        <option value="rolify:user" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="system_test" />

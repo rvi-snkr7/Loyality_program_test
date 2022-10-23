@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Reward Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reward_users.each do |reward_user| %>
+      <tr>
+        <td><%= reward_user.name %></td>
+        <td><%= link_to 'Show', reward_user %></td>
+        <td><%= link_to 'Edit', edit_reward_user_path(reward_user) %></td>
+        <td><%= link_to 'Destroy', reward_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Reward User', new_reward_user_path %>

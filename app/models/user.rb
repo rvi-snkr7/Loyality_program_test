@@ -2,7 +2,8 @@
 
 class User < ApplicationRecord
   validates :name, presence: true
-  validates :birthday, presence: true
+  # validates :dob, presence: true
   has_many :transactions
-  has_many :points
+  has_many :transaction_users
+
 end

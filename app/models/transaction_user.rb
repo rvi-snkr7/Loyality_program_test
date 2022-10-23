@@ -2,5 +2,4 @@
 
 class TransactionUser < ApplicationRecord
     belongs_to :user
-    belongs_to :transactions
 end
